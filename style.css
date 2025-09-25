@@ -24,7 +24,7 @@ body {
   font-family: sans-serif;
   color: white;
   text-align: center;
-  /* padding: max(env(safe-area-inset-top), 0px) 1rem env(safe-area-inset-bottom); */
+  padding: max(env(safe-area-inset-top), 0px) 1rem env(safe-area-inset-bottom);
   overflow: hidden;
 }
 
