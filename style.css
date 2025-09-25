@@ -1,27 +1,31 @@
-/* Сброс базовых отступов */
-html,
-body {
+* {
   margin: 0;
   padding: 0;
-  height: 100%;
-  overflow: hidden; /* предотвращает скролл, если контент влезает */
+  box-sizing: border-box;
 }
 
-/* Градиент на ВСЁМ экране */
-html {
-  background: linear-gradient(180deg, #8a2be2, #e0b0ff);
-  background-attachment: fixed;
-}
-
-/* Центрирование контента */
+html,
 body {
+  height: 100%;
+  background: #8a2be2;
+}
+
+body {
+  background: linear-gradient(
+    to bottom,
+    #8a2be2 0%,
+    #8a2be2 60px,
+    #e0b0ff 100%
+  ) !important;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: sans-serif;
   color: white;
   text-align: center;
-  padding: env(safe-area-inset-top) 1rem env(safe-area-inset-bottom);
+  padding: max(env(safe-area-inset-top), 0px) 1rem env(safe-area-inset-bottom);
+  overflow: hidden;
 }
 
 .content {
