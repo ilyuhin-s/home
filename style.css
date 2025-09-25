@@ -1,13 +1,19 @@
 body {
   font-family: sans-serif;
   text-align: center;
-  padding: 2rem;
-  background: linear-gradient(180deg, #8a2be2, #e0b0ff);
-  min-height: 100vh;
   padding: 0;
   margin: 0;
 }
 
 h1 {
   margin: 0;
+}
+
+.content {
+  background: linear-gradient(180deg, #8a2be2, #e0b0ff);
+  min-height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
