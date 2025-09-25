@@ -1,23 +1,34 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Мое PWA</title>
-    <link rel="manifest" href="manifest.json" />
-    <meta name="theme-color" content="#317EFB" />
+    <title>Моя PWA</title>
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Иконки для разных устройств -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/icons/icon-192.png"
+    />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <meta name="theme-color" content="#4a90e2" />
   </head>
   <body>
-    <h1>Привет! Это моя PWA 🚀</h1>
-    <p>Работает и офлайн.</p>
+    <h1>Привет, это моя PWA!</h1>
+    <p>Добавь меня на главный экран!</p>
 
     <script>
+      // Регистрация Service Worker
       if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-          .register("service-worker.js")
-          .then(() => console.log("Service Worker зарегистрирован!"))
-          .catch((err) => console.error("Ошибка SW:", err));
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/sw.js")
+            .then((reg) => console.log("SW зарегистрирован:", reg))
+            .catch((err) => console.log("Ошибка регистрации SW:", err));
+        });
       }
     </script>
   </body>
