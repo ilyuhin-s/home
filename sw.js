@@ -1,10 +1,10 @@
 const CACHE_NAME = "my-pwa-v1";
 const urlsToCache = [
-  "/",
-  "/index.html",
-  "/style.css",
-  "/icons/icon-192.png",
-  "/icons/icon-512.png",
+  "/home/",
+  "/home/index.html",
+  "/home/style.css",
+  "/home/icons/icon-192.png",
+  "/home/icons/icon-512.png",
 ];
 
 // Установка кэша при установке SW
