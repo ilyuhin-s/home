@@ -11,14 +11,11 @@ body {
 }
 
 body {
+  font-family: "Zalando Sans", sans-serif;
   background: #ffffff;
   background-attachment: fixed;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: sans-serif;
-  color: white;
-  text-align: center;
+  color: black;
   padding: max(env(safe-area-inset-top), 0px) 1rem env(safe-area-inset-bottom);
   overflow: hidden;
 }
@@ -40,6 +37,7 @@ p {
 }
 
 .menu {
+  color: #ffffff;
   background-color: blue;
   border-radius: 20px;
   padding: 1rem;
@@ -52,4 +50,20 @@ p {
   margin: auto;
   bottom: 20px;
   height: 70px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.section {
+  width: 90vw;
+  display: flex;
+  text-align: left;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 26px;
 }

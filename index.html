@@ -22,6 +22,12 @@
     <link rel="apple-touch-icon" href="./icons/icon-192.png" />
 
     <!-- Стили -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
 
     <!-- React с CDN -->
@@ -43,12 +49,18 @@
     <!-- Подключаем компонент -->
     <script type="text/babel" src="./App.js"></script>
     <script type="text/babel" src="./Menu.js"></script>
+    <script type="text/babel" src="./Rooms.js"></script>
 
     <!-- Точка входа -->
     <script type="text/babel">
       const root = ReactDOM.createRoot(document.getElementById("root"));
       root.render(
         <App>
+          <div class="section title">
+            Welcome
+            <br /> Home, Sergey
+          </div>
+          <Rooms />
           <Menu />
         </App>
       );
