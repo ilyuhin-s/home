@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 html,
@@ -16,12 +17,12 @@ body {
   background-attachment: fixed;
   display: flex;
   color: black;
-  padding: max(env(safe-area-inset-top), 0px) 1rem env(safe-area-inset-bottom);
+  padding: 26px;
   overflow: hidden;
 }
 
 .content {
-  max-width: 600px;
+  padding-top: 60px;
 }
 
 h1 {
@@ -52,8 +53,16 @@ p {
   height: 70px;
 }
 
+.menu-item {
+  transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.menu-item:active {
+  transform: scale(1.1);
+}
+
 .title {
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 600;
 }
 
@@ -65,5 +74,40 @@ p {
 
 .section-title {
   font-weight: 500;
-  font-size: 26px;
+  font-size: 24px;
+}
+
+.rooms-title {
+  font-weight: 500;
+  font-size: 24px;
+  flex: 100%;
+}
+
+.rooms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 50px;
+}
+
+.room-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 2%;
+}
+
+.rooms-item {
+  flex: 0 0 32%;
+
+  background: white;
+  box-shadow: 0 0 0 4px blue inset;
+  height: 110px;
+  border-radius: 25px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+  padding: 20px;
+}
+
+.rooms-item--active {
+  background: blue;
+  color: #ffffff;
 }
