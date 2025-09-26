@@ -10,7 +10,7 @@
 
     <!-- Манифест и тема -->
     <link rel="manifest" href="./manifest.json" />
-    <meta name="theme-color" content="#8a2be2" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- Иконки -->
     <link
@@ -23,12 +23,36 @@
 
     <!-- Стили -->
     <link rel="stylesheet" href="./style.css" />
+
+    <!-- React с CDN -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/@ant-design/icons/dist/index.umd.js"></script>
   </head>
   <body>
-    <div class="content">
-      <h1>Привет, это моя PWA!</h1>
-      <p>Добавь меня на главный экран!</p>
-    </div>
+    <!-- Контейнер для React -->
+    <div id="root"></div>
+
+    <!-- Подключаем компонент -->
+    <script type="text/babel" src="./App.js"></script>
+    <script type="text/babel" src="./Menu.js"></script>
+
+    <!-- Точка входа -->
+    <script type="text/babel">
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(
+        <App>
+          <Menu />
+        </App>
+      );
+    </script>
 
     <script>
       // Регистрация Service Worker
