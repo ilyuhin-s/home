@@ -158,3 +158,22 @@ p {
   color: #ffffff;
   font-weight: 600;
 }
+
+.switcher {
+  height: 60px;
+  background: #ffffff;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 36px;
+  width: 90%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.switcher-point {
+  background: #0044ff;
+  width: 120px;
+  height: 60px;
+  border-radius: 20px;
+}
