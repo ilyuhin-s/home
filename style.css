@@ -16,8 +16,8 @@ body {
 
   background: linear-gradient(
     180deg,
-    #d6e1ff 0%,
-    hsla(224, 76%, 57%, 1) 41%,
+    #0044ff 0%,
+    hsl(224deg 100% 50%) 41%,
     hsla(0, 0%, 0%, 1) 100%
   );
   background-size: 100% 200px;
