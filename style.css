@@ -80,6 +80,7 @@ p {
   width: 100%;
   display: flex;
   text-align: left;
+  flex-direction: column;
 }
 
 .section-title {
@@ -97,7 +98,6 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 50px;
 }
 
 .room-items {
@@ -110,7 +110,7 @@ p {
   flex: 0 0 calc((100% - 4%) / 3);
   flex-direction: column;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.8rem;
   border-radius: 22px;
   /* box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2); */
   padding: 16px;
@@ -121,12 +121,15 @@ p {
   gap: 8px;
   justify-content: space-between;
   align-items: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   color: #595959;
 }
 
 .rooms-item span {
   font-size: 38px;
-  color: #595959;
+  color: #3f3f3f;
 }
 
 .rooms-item--active {
@@ -136,4 +139,18 @@ p {
 
 .rooms-item--active span {
   color: #888888;
+}
+
+.groups {
+  display: flex;
+  gap: 18px;
+  white-space: nowrap;
+  color: #888888;
+  margin: 24px 0;
+  overflow: hidden;
+}
+
+.group--active {
+  color: #ffffff;
+  font-weight: 600;
 }
