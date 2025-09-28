@@ -8,13 +8,13 @@
 html,
 body {
   height: 100%;
-  background: #ffffff;
+  background: green;
 }
 
 body {
   font-family: "Inter", sans-serif;
-  background: #ffffff;
-  background-attachment: fixed;
+  background: indigo;
+  /* background-attachment: fixed; */
   display: flex;
   color: black;
   padding: 26px;
