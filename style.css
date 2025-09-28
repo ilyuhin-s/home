@@ -13,7 +13,7 @@ body {
 
 body {
   font-family: "Inter", sans-serif;
-  background: "#FF0000";
+  background: #FF0000;
   /* background-attachment: fixed; */
   display: flex;
   color: black;
