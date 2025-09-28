@@ -13,7 +13,14 @@ body {
 
 body {
   font-family: "Inter", sans-serif;
-  background: #FF0000;
+
+  background: linear-gradient(
+    180deg,
+    #d6e1ff 0%,
+    hsla(224, 76%, 57%, 1) 41%,
+    hsla(0, 0%, 0%, 1) 100%
+  );
+  background-size: 100% 200px;
   /* background-attachment: fixed; */
   display: flex;
   color: black;
