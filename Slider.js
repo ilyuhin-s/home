@@ -4,7 +4,6 @@ function Slider() {
   const [isDragging, setIsDragging] = React.useState(false);
   const isDraggingRef = React.useRef(isDragging);
 
-  // Синхронизируем ref с состоянием
   React.useEffect(() => {
     isDraggingRef.current = isDragging;
   }, [isDragging]);
@@ -16,6 +15,28 @@ function Slider() {
     const newWidth = Math.max(0, Math.min(rect.width, clientX - rect.left));
     setWidth(newWidth);
   }, []);
+
+  // 👇 Эффект для обновления фона body
+  React.useEffect(() => {
+    const slider = sliderRef.current;
+    if (!slider) return;
+
+    const percent = (width / slider.offsetWidth) * 100; // 0–100%
+    // Яркость: например, от 20% (тёмный) до 80% (светлый)
+    const lightness = 20 + percent * 0.6; // 20 → 80 при 0% → 100%
+
+    const gradient = `linear-gradient(
+      180deg,
+      #0044ff 0%,
+      hsl(224, 100%, ${lightness}%) 40%,
+      hsla(0, 0%, 0%, 1) 100%
+    )`;
+
+    document.body.style.background = gradient;
+    document.body.style.backgroundSize = "100% 200px";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundAttachment = "fixed";
+  }, [width]);
 
   const handleMouseDown = React.useCallback(
     (e) => {
