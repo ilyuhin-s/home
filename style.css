@@ -177,5 +177,4 @@ p {
   background: #0044ff;
   height: 60px;
   border-radius: 20px;
-  transition: width 0.2s ease; /* плавное изменение ширины */
 }
