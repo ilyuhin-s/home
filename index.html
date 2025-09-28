@@ -52,6 +52,7 @@
     <!-- Подключаем компонент -->
     <script type="text/babel" src="./App.js"></script>
     <script type="text/babel" src="./Rooms.js"></script>
+    <script type="text/babel" src="./Slider.js"></script>
 
     <!-- Точка входа -->
     <script type="text/babel">
@@ -59,9 +60,7 @@
       root.render(
         <App>
           <Rooms />
-          <div className="switcher">
-            <div className="switcher-point"></div>
-          </div>
+          <Slider />
         </App>
       );
     </script>

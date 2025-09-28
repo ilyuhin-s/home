@@ -159,7 +159,7 @@ p {
   font-weight: 600;
 }
 
-.switcher {
+.slider {
   height: 60px;
   background: #ffffff;
   border-radius: 20px;
@@ -169,11 +169,13 @@ p {
   left: 0;
   right: 0;
   margin: auto;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.switcher-point {
+.slider-fill {
   background: #0044ff;
-  width: 120px;
   height: 60px;
   border-radius: 20px;
+  transition: width 0.2s ease; /* плавное изменение ширины */
 }
