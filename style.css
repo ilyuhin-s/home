@@ -8,7 +8,7 @@
 html,
 body {
   height: 100%;
-  background: green;
+  background: #000000;
 }
 
 body {
@@ -21,6 +21,7 @@ body {
     hsla(0, 0%, 0%, 1) 100%
   );
   background-size: 100% 200px;
+  background-repeat: no-repeat;
   /* background-attachment: fixed; */
   display: flex;
   color: black;
