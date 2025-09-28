@@ -10,7 +10,10 @@ function Rooms() {
         {/* <div className="group">Hallway</div> */}
       </div>
       <div className="rooms">
-        <div className="rooms-title">Light on bedroom</div>
+        <div className="rooms-title">
+          Light on bedroom
+          <span className="material-icons settings-icon">settings</span>
+        </div>
         <div className="room-items">
           <div className="rooms-item rooms-item--active">
             <span className="material-icons">wb_incandescent</span>
