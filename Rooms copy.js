@@ -6,23 +6,23 @@ function Rooms() {
         <div className="room-items">
           <div className="rooms-item rooms-item--active">
             <span className="material-icons">king_bed</span>
-            Bedroom
+            Спальня
           </div>
           <div className="rooms-item">
             <span className="material-icons">restaurant</span>
-            Kitchen
+            Кухня
           </div>
           <div className="rooms-item">
             <span className="material-icons">weekend</span>
-            Living room
+            Гостинная
           </div>
           <div className="rooms-item">
             <span className="material-icons">clean_hands</span>
-            Bathroom
+            Ванная
           </div>
           <div className="rooms-item">
             <span className="material-icons">door_front</span>
-            Hollway
+            Коридор
           </div>
         </div>
       </div>

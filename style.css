@@ -96,7 +96,7 @@ p {
 .rooms {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 12px;
   margin-top: 50px;
 }
 
@@ -107,31 +107,33 @@ p {
 }
 
 .rooms-item {
-  flex: 0 0 49%;
-  font-weight: 700;
-  font-size: 16px;
-  height: 61px;
+  flex: 0 0 calc((100% - 4%) / 3);
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 14px;
   border-radius: 22px;
-  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
-  padding: 20px;
+  /* box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2); */
+  padding: 16px;
   display: flex;
   position: relative;
   overflow: hidden;
+  background-color: #121212;
   gap: 8px;
   justify-content: space-between;
   align-items: center;
+  color: #595959;
 }
 
 .rooms-item span {
   font-size: 38px;
-  color: blue;
+  color: #595959;
 }
 
 .rooms-item--active {
-  background: blue;
   color: #ffffff;
+  font-weight: 600;
 }
 
 .rooms-item--active span {
-  color: white;
+  color: #888888;
 }
